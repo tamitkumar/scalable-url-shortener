@@ -199,10 +199,11 @@ docker-compose up -d
 ### get available container details
 ```bash
 docker ps
-```
+
 CONTAINER ID   IMAGE         COMMAND                  CREATED       STATUS          PORTS                    NAMES
 3d51c4bf5f22   postgres:15   "docker-entrypoint.s…"   2 hours ago   Up 48 minutes   0.0.0.0:5433->5432/tcp   url_shortener_postgres
 ac097c65ae40   redis:7       "docker-entrypoint.s…"   2 hours ago   Up 48 minutes   0.0.0.0:6379->6379/tcp   url_shortener_redis
+```
 ### Inter inside redis cli
 ```bash
 docker exec -it 3d51c4bf5f22 redis-cli
